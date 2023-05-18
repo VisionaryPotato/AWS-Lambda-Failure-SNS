@@ -3,7 +3,7 @@ import time
 
 def test_timeout_error():
     # Default lambda function has a timeout time of 3 sec.
-    time.sleep(3)
+    time.sleep(4)
     
 def test_syntax_error():
     #array = [) #Uncomment to test Syntax error
@@ -21,4 +21,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
     }
-
