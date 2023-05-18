@@ -15,7 +15,7 @@ def test_mathematical_error():
     
 def lambda_handler(event, context):
     # Uncomment functions to test notification system.
-    #test_timeout_error()
+    test_timeout_error()
     #test_mathematical_error()
     return {
         'statusCode': 200,
