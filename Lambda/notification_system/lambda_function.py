@@ -10,7 +10,7 @@ def lambda_handler(event, context):
     message = f"An error has been found in {functionName}.\n\nResource: {resource}\n\nError Message: {errorMessage}\n\nPlease go back and fix any issues to prevent any delays."
 
     boto3.client('sns').publish (
-      TargetArn = "arn:aws:sns:us-east-2:842059350697:lambda_failure", # TODO: Paste SNS Topic ARN Here
+      TargetArn = "", # TODO: Paste SNS Topic ARN Here
       Subject =  subject, # Subject of Email
       Message = message
     )
