@@ -11,7 +11,7 @@ def lambda_handler(event, context):
 
     boto3.client('sns').publish (
       TargetArn = "", # TODO: Paste SNS Topic ARN Here
-      Subject =  subject, # Subject of Email
+      Subject =  subject,
       Message = message
     )
   
